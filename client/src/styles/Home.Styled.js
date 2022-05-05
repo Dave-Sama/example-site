@@ -27,6 +27,8 @@ export const LeftSector = tw.div`
 
 export const LogoImageContainer = tw.div`
     m-auto
+    font-family['Open Sans', sans-serif]
+
 `;
 export const ButtonRequest = tw.button`
     m-auto
@@ -34,7 +36,7 @@ export const ButtonRequest = tw.button`
     background-color[#0F4c85]
     border-2
     font-size[17px]
-    font-family[a'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif]
+    font-family['Open Sans', sans-serif]
     text-white
     my-12    
     width[150px]

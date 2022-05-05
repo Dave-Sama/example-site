@@ -16,7 +16,7 @@ export default function Navbar() {
 				</Link>
 			</Item>
 			<Item>
-				<Link to='About' smooth={'easeInOutQuad'} duration={1500}>
+				<Link to='AboutUs' smooth={'easeInOutQuad'} duration={1500}>
 					ABOUT NDA
 				</Link>
 			</Item>
@@ -31,7 +31,7 @@ export default function Navbar() {
 				</Link>
 			</Item>
 			<Item>
-				<Link to='Contact' smooth={'easeInOutQuad'} duration={1500}>
+				<Link to='ContactUs' smooth={'easeInOutQuad'} duration={1500}>
 					CONTACT
 				</Link>
 			</Item>

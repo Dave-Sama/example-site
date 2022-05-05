@@ -22,10 +22,13 @@ export const LeftSector = tw.div`
     background-color[rgb(234, 244, 246)]
     w-1/3
     flex
+    font-family['Open Sans', sans-serif]
+
 `;
 
 export const LogoImageContainer = tw.div`
-    my-24
+    my-20
+    mx-20
 `;
 
 export const SpanBold = tw.span`
@@ -61,6 +64,7 @@ export const ButtonRequest = tw.button`
 `;
 
 export const RightSector = tw.div`
+font-family['Open Sans', sans-serif]
 
     bg-white
     w-2/3

@@ -4,6 +4,9 @@ import Navbar from '../navbar/Navbar';
 
 // style
 import { HeaderContainer } from '../../styles/Header.Styled';
+
+import { ParallaxBanner } from 'react-scroll-parallax';
+
 function Header() {
 	return (
 		<HeaderContainer>

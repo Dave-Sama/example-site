@@ -10,7 +10,8 @@ export const LogoContainer = tw.div`
 `;
 export const LogoText = tw.p`
     text-center
-    font-family['Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif]
+    font-family['Open Sans', sans-serif]
+
     m-auto
     color[#0F4C85]
     font-bold
