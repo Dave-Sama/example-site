@@ -1,9 +1,10 @@
 // Apis:
 import tw from 'twin.macro';
 import { Element } from 'react-scroll';
+import styledComponents from 'styled-components';
 
 export const OurVisionContainer = tw(Element)`
-    height[75vh]
+    lg:height[fit-fit-content]
     background-color[rgb(16,46,82)]
     flex
     flex-col
@@ -12,7 +13,8 @@ export const OurVisionContainer = tw(Element)`
 `;
 export const Heading = tw.h1`
     block
-    mt-20
+    mt-12
+    lg:mt-20
     mb-10
     text-center
     
@@ -24,9 +26,26 @@ export const Description = tw.h1`
     block
     
     font-weight[100]
-    w-2/3
+    lg:width[90%]
     mx-auto
+    w-11/12
+    // text-justify
     text-white
-    text-2xl
-    height[18%]
+    // text-justify
+    text-xl
+    xl:text-xl
+    2xl:text-2xl
+    lg:height[18%]
+    // p-1
+    my-6
+`;
+
+export const Spacing = styledComponents.div`
+    
+    height: ${(props) => props.space}rem;
+   ${tw`
+    block
+    // bg-red-200
+    w-full
+   `}
 `;

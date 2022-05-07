@@ -17,8 +17,11 @@ import {
 } from '../../styles/ContactUs.Styled';
 
 import ImgIcon from '../../images/ContactUsImg.png';
+import { useSelector } from 'react-redux';
 
 function ContactUs() {
+	const { width } = useSelector((state) => state.screen);
+
 	return (
 		<ContactUsContainer name='ContactUs'>
 			<LeftSector>
@@ -32,14 +35,14 @@ function ContactUs() {
 					looking forward to talking with you.
 				</RightHeading>
 				<Spacing space={5}> </Spacing>
-				<Text margin={5}>
+				<Text margin={width}>
 					<b>Email:</b> info@nextdooralliance.com
 				</Text>
-				<Text margin={5}>
+				<Text margin={width}>
 					<b>Tel:</b> 310-853-1339
 				</Text>
 				<Spacing space={4}> </Spacing>
-				<Text margin={5}>
+				<Text margin={width}>
 					For any general inquiries, or to schedule a call to go over what we
 					have to offer, please fill in the following contact form:
 				</Text>

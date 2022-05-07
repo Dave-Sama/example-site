@@ -1,8 +1,10 @@
 import React from 'react';
+
 import {
 	Description,
 	Heading,
 	OurVisionContainer,
+	Spacing,
 } from '../../styles/OurVision.Styled';
 
 function OurVision() {
@@ -16,6 +18,7 @@ function OurVision() {
 				maintenance, marketing, accounts payable, accounts receivable, sales,
 				property management and virtual assistance.
 			</Description>
+			<Spacing space={0.5} />
 			<Description>
 				Not only were our bilingual skills highly desirable, but our dedication
 				and enthusiasm were just what was needed to rejuvenate the client's
@@ -23,6 +26,7 @@ function OurVision() {
 				contacts per month and successfully maintaining one the highest
 				conversion rates in the industry.
 			</Description>
+			<Spacing space={0.5} />
 			<Description>
 				Now, we are bringing this experience to help many others build their
 				businesses by increasing communication, shortening timelines, and

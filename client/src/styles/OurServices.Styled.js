@@ -3,54 +3,88 @@ import styledComponents from 'styled-components';
 import tw from 'twin.macro';
 import { Element } from 'react-scroll';
 
-// Images:
-import cs from '../images/customerSupport.png';
-import as from '../images/adminSupport.png';
+// // Images:
+// import cs from '../images/customerSupport.png';
+// import as from '../images/adminSupport.png';
 
 export const OurServicesContainer = styledComponents(Element)`
     ${tw`
+
         width[100%]
-        height[60vh]
+        lg:height[fit-content]
+        // height[100vh]
         flex
-        justify-center
+        lg:justify-center
+        flex-col
+        lg:flex-row
     `}
 `;
 
+// ------------------------------------------------
+
 export const LeftSector = tw.div`
- 
-    height[510px]
+    height[12%]
+    lg:height[79vh]
+    2xl:height[71vh]
     background-color[rgb(234, 244, 246)]
-    w-1/3
-    flex
-    font-family['Open Sans', sans-serif]
+
+    lg:w-1/3
+    lg:flex
+    lg:font-family['Open Sans', sans-serif]
 
 `;
+
+export const RightSector = tw.div`
+    font-family['Open Sans', sans-serif]
+    height[fit-content]
+    // bg-blue-200
+    // height[40%]
+    lg:w-2/3
+    w-full
+    flex
+    flex-col
+    lg:flex-row
+    `;
+
+// -----------------------------------------------
 
 export const LogoImageContainer = tw.div`
-    my-20
-    mx-20
+    lg:my-20
+    lg:mx-20
+    mt-3
+    inline-flex
+    lg:inline-block
 `;
+
+// ------------------------------------------------
 
 export const SpanBold = tw.span`
     color[#00305B]
-    block 
-    w-80  
-    font-weight[700]
-    font-size[3vw]
+    lg:block 
+    lg:w-80 
     ml-10
+ 
+    lg:font-weight[700]
+    font-size[5vh]
+    lg:font-size[3vw]
+    lg:ml-10 
     
     
 `;
 export const Span = tw.span`
     color[#00305B]
-    block 
-    w-80  
+    font-size[5vh]
+    lg:block 
+    m-auto
+    // w-80  
     ml-10
-    font-size[3vw]
+    lg:font-size[3vw]
     
-`;
+    `;
+
+// -----------------------------------------------
+
 export const ButtonRequest = tw.button`
-    
     block
     background-color[#0F4c85]
     border-2
@@ -61,69 +95,103 @@ export const ButtonRequest = tw.button`
     ml-10    
     width[150px]
     height[40px]
-`;
+    `;
 
-export const RightSector = tw.div`
-font-family['Open Sans', sans-serif]
+// -----------------------------------------------
 
-    bg-white
-    w-2/3
-    flex
-`;
 export const CustomerSupportContainer = styledComponents.div`
-    background-image: url(${cs});
-    background-size:contain;
-    background-repeat: no-repeat;
+   
     ${tw`
-        w-1/3
-        height[100%]
         
+        w-full
+        lg:w-1/3
+        lg:height[100%]
+        background-size[100% 20%]
+        // height[45%]
+        // bg-red-200
+        `}
+        `;
+
+export const AdminSupportContainer = styledComponents.div`
+
+        ${tw`
+        w-full
+        background-size[100% 20%]
+    lg:w-1/3
+    lg:height[100%]
+    // height[70vh]
+    // bg-blue-400
+`}
+`;
+
+// -----------------------------------------------
+
+export const CustomerImg = styledComponents.img`
+    ${tw`
+        w-full
     `}
 `;
+
 export const CsInfo = styledComponents.ul`
-    ${tw`
-        width[99%]
-        m-auto
-        my-28
-        height[fit-content]
-    `}
+${tw`
+lg:width[99%]
+lg:m-auto
+// lg:my-28
+// my-40
+height[fit-content]
+// bg-purple-400
+`}
 `;
 
 export const CsLi = styledComponents.li`
 
     ${tw`
-        w-11/12
+    w-11/12
+    bg-gray-500/20
         mx-auto
-        my-2
+        my-3
+        p-2
+        lg:p-0
     `}
 `;
+
+// -----------------------------------------------
+
 export const Heading = styledComponents.p`
 
-    ${tw`
-        inline
-        mx-2 
+${tw`
+        inline-block
+        // bg-green-300
+        lg:mx-2
+         
+        ml-10
+        // text-center
+        // mx-auto
+        // ml-10 
+        // border-b
         font-weight[500]
-        font-size[18px]
+        font-size[15px]
     `}
 `;
 export const Description = styledComponents.p`
 
     ${tw`
-        my-1.5
-        mx-14 
+        // bg-gray-200
+    
+        // text-center
+        lg:text-align[left]
+        my-2
+        
+        lg:mx-14 
+        mx-20
+        
         font-weight[400]
-        font-size[14px]
+        lg:font-size[14px]
+        font-size[15px]
+        lg:width[80%]
         width[80%]
         text-blue-800
     `}
 `;
 
-export const AdminSupportContainer = styledComponents.div`
-background-image: url(${as});
-background-size:contain;
-background-repeat: no-repeat;
-${tw`
-    w-1/3
-    height[100%]
-`}
-`;
+// -----------------------------------------------

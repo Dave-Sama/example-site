@@ -33,20 +33,30 @@ import {
 	CsLi,
 	Heading,
 	Description,
+	CustomerImg,
 } from '../../styles/OurServices.Styled';
+import { useSelector } from 'react-redux';
+
+// Images:
+import cs from '../../images/customerSupport.png';
+import as from '../../images/adminSupport.png';
 
 function OurServices() {
+	const { width } = useSelector((state) => state.screen);
+
 	return (
 		<OurServicesContainer name='OurServices'>
 			<LeftSector>
 				<LogoImageContainer>
 					<SpanBold>OUR</SpanBold>
 					<Span>SERVICES</Span>
-					<ButtonRequest> Request a Quote</ButtonRequest>
+					{width > 1024 ? <ButtonRequest> Request a Quote</ButtonRequest> : ''}
 				</LogoImageContainer>
 			</LeftSector>
+
 			<RightSector>
 				<CustomerSupportContainer>
+					<CustomerImg src={cs} alt='No connection' />
 					<CsInfo>
 						<CsLi>
 							<img className='inline-block' src={cs1} alt='no connection' />
@@ -76,6 +86,8 @@ function OurServices() {
 					</CsInfo>
 				</CustomerSupportContainer>
 				<AdminSupportContainer>
+					<CustomerImg src={as} alt='No connection' />
+
 					<CsInfo>
 						<CsLi>
 							<img className='inline-block' src={as1} alt='no connection' />

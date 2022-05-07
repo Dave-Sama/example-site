@@ -12,15 +12,18 @@ export const RecomendationsContainer = styledComponents.div`
     // background-blend-mode: color-dodge;
     
     ${tw`
-        height[65vh]
+        height[fit-content]
         flex
+        flex-col
+        lg:flex-row
     `}
     
 
 `;
 export const Item = tw.div`
 block  
-w-1/3
+lg:w-1/3
+width[100%]
 
 
 `;
@@ -35,10 +38,12 @@ export const Heading = tw.h1`
 `;
 export const Description = tw.h1`
     block
-    width[49%]
+    lg:width[49%]
+    width[90%]
     mx-auto
     // color[#000000]
-    text-xl
+    lg:text-xl
+    font-size[3vh]
     font-weight[500]
     text-black
     font-family['Cormorant Garamond', serif ]
@@ -49,8 +54,10 @@ export const Description = tw.h1`
 export const Quote = tw.i`
     block
     mt-6
-    font-size[2vw]
+    lg:font-size[2vw]
+    font-size[5vw]
     color[rgb(242, 121, 121)]
+    my-5
 `;
 
 //242, 121, 121)

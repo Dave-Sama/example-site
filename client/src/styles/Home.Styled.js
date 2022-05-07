@@ -11,17 +11,24 @@ export const HomeContainer = styledComponents(Element)`
 		linear-gradient(to right, rgba(133, 152, 166,1),rgba(1, 78, 133,0.5));
 
 	background-blend-mode: overlay;
+	background-repeat: no-repeat;
+	background-size: cover;
+
     ${tw`
+        flex
+        flex-col
+        lg:flex-row
         w-full
         h-screen
     `}
 `;
 
 export const LeftSector = tw.div`
-    float-left
-    h-screen
+  
+    lg:h-screen
     background-color[rgba(0,48,91,0.8)]
-    w-1/3
+    w-full
+    lg:w-1/3
     flex
 `;
 
@@ -31,7 +38,7 @@ export const LogoImageContainer = tw.div`
 
 `;
 export const ButtonRequest = tw.button`
-    m-auto
+    mx-auto
     block
     background-color[#0F4c85]
     border-2
@@ -39,12 +46,11 @@ export const ButtonRequest = tw.button`
     font-family['Open Sans', sans-serif]
     text-white
     my-12    
+    
     width[150px]
     height[40px]
 `;
 
 export const RightSector = tw.div`
-    float-left
-    w-1/3
-    bg-black
+    w-2/3
 `;

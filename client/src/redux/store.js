@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
-import contactUsSlice from './features/ContactUs.Redux';
+import screenSlice from './features/Screen.Redux';
 export const store = configureStore({
 	reducer: {
-		contactUs: contactUsSlice,
+		screen: screenSlice,
 	},
 });

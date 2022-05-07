@@ -20,22 +20,28 @@ export const RightSector = tw.div`
  
     h-full
     // background-color[rgb(234, 244, 246)]
-    w-1/2
+    w-2/3
+    lg:w-1/2
     flex
     flex-col
     bg-gray-500/20
+
 `;
 
 export const LeftSector = styledComponents.div`
 background-image:  url(${bg});
-background-repeat: no-repeat;
-background-size: 150%;
-
-
     ${tw`
+        background-position[60%]
+        
+        background-blend-mode[overlay]
+        background-repeat[no-repeat]
+        lg:background-size[cover]
+        2xl:background-size[150%]
+        background-size[cover]
         h-full
-        bg-green-300
-        w-1/2
+        bg-gray-300
+        lg:w-1/2
+        w-1/3
         flex 
         flex-col
         
@@ -51,9 +57,11 @@ export const LogoImageContainer = tw.div`
 export const SpanBold = tw.span`
     color[#00305B]
     block 
-    w-1/3  
+    lg:w-1/3  
+    w-2/3  
     font-weight[700]
-    font-size[3vw]
+    lg:font-size[3vw]
+    font-size[7vw]
     text-white
     ml-10
     mt-20
@@ -63,10 +71,14 @@ export const SpanBold = tw.span`
 export const Span = tw.span`
     color[#00305B]
     block 
-    w-80  
+    // lg:w-80  
+    width[80%]  
     ml-10
     my-4
-    font-size[1vw]
+    sm:font-size[2vh]
+    lg:font-size[2vw]
+    font-size[4vw]
+    2xl:font-size[3vh]
     font-family['Open Sans', sans-serif]
 
     

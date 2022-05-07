@@ -29,8 +29,9 @@ ${tw`
 export const InnerContainer = tw.div`
     mx-auto
     mb-36
-    w-1/3
-    height[60%]
+    width[90%]
+    lg:w-1/2
+    height[fit-content]
     bg-white
 
 `;
@@ -40,16 +41,24 @@ export const Heading = tw.h1`
     word-spacing[5px]
     color[#3588CC]
     font-weight[600]
-    text-8xl
-    my-10
+    text-4xl
+    lg:text-4xl
+    2xl:text-4xl
+    mt-10
+    lg:my-10
     line-height[1.2]
     `;
 export const Description = tw.h1`
     width[80%]
     mx-auto
-    line-height[5px]
+    // line-height[5px]
+    text-justify
     color[#045184]
-    text-xl
-    my-12
+    font-size[2vh]
+    lg:text-2xl
+    md:font-size[1.5rem]
+    sm:font-size[3vh]
+    lg:my-12
+    my-6
     
 `;

@@ -8,6 +8,7 @@ import bg from '../../images/makesUsDifferent-removebg-preview.png';
 import {
 	Description,
 	Heading,
+	Img,
 	WhatMakesUsDifferentContainer,
 } from '../../styles/WhatMakesUsDifferent.Styled';
 
@@ -27,7 +28,7 @@ function WhatMakesUsDifferent() {
 				affords us a depth of knowledge about the culture, and the real estate
 				culture, we service.
 			</Description>
-			<img className='w-48 mx-auto mb-10' src={bg} alt='no connection' />
+			<Img  src={bg} alt='no connection' />
 		</WhatMakesUsDifferentContainer>
 	);
 }
